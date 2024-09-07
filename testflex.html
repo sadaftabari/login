@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    input[type=text],
+    input[type=password],
+    [type=tell],
+    input[type=email],
+    [type=number],
+    input[type=submit] {
+      width: 100%;
+    }
+img{width: 100%;
+display: block;}
+    form {
+      width: 50%;
+      margin: 0 auto;
+      background: #f0f8ff4a;
+      border-radius: 10px;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    input,
+    select {
+      border-radius: 10px;
+    }
+
+    form div {
+      padding: 10px;
+    }
+
+        body{margin: 0px;}
+        .container {display: flex;
+          justify-content: center;
+         flex-grow: 1;
+        }
+        
+        .rightHalf{background-color:#9516e4;
+        width: 50%;
+        
+       }
+        .lefthalf{
+            width: 50%;
+      
+        background: url(login-form-img.png) center;
+        background-repeat: no-repeat;
+        background-size: cover;}
+        @media(max-width:935px){
+          .lefthalf{display: none;}
+          .rightHalf{width: 100%;}
+          
+        }
+        @media(max-width:620px){
+          form{
+            width: 70%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lefthalf"></div>
+        <div class="rightHalf">
+            <h1 style="text-align: center; color:antiquewhite" font-size="40px"><b><em>LOGIN</em></b></h1>
+            <form method="get" style=>
+              <div>
+                <label>Name</label>
+                <input name="name" type="text" placeholder="your name">
+              </div>
+              <div>
+                <label>Family</label>
+                <input name="family" type="text" placeholder="your family">
+              </div>
+              <div>
+                <label>username</label>
+                <input name="username" type="text" placeholder="username">
+              </div>
+              <div>
+                <label>password</label>
+                <input name="username" type="password" placeholder="#exp:3Ssdsdf">
+              </div>
+              <div>
+                <label>Age</label>
+                <input name="Age" type="number" placeholder="Age" min="18" max="60">
+              </div>
+              <div>
+                <label>E-mail</label>
+                <input name="email" type="email" placeholder="exp:info@gmail.com">
+              </div>
+              <div>
+                <label>Tell</label>
+                <input name="tell" type="tell" placeholder="exp:+989123560055">
+              </div>
+              <div>
+                <span><b>sexuality:</b></span>
+                <label>female</label>
+                <input type="radio" name="sexuality">
+                <label>male</label>
+                <input type="radio" name="sexuality">
+              </div>
+              <div>
+                <label>grade</label>
+                <select class="txtInput" id="grade">
+                  <option value="item_0">Your Grade</option>
+                  <option value="item_1">diploma</option>
+                  <option value="item_2">baccalaureate</option>
+                  <option value="item_3">master of science</option>
+                  <option value="item_4">medical profession</option>
+              </div>
+              </select>
+              <button type="submit" style="color: blue;">send</button>
+    
+            </form>
+         
+        </div>
+       
+    </div>
+</body>
+</html>
